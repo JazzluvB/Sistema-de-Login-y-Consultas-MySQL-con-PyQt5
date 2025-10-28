@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>519</width>
+    <height>408</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:#3E3E3C;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QLabel" name="lbTitulo">
+      <property name="minimumSize">
+       <size>
+        <width>495</width>
+        <height>47</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>-1</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    background-color: #48484A;  /* gris oscuro estilo macOS, consistente con los labels y QLineEdit */
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 22px;
+    border: none;
+    border-radius: 12px;
+    padding: 8px;
+}</string>
+      </property>
+      <property name="text">
+       <string>Sistema Login Python QT</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QFormLayout" name="formLayout">
+        <item row="0" column="0" colspan="2">
+         <widget class="QWidget" name="widget" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <layout class="QFormLayout" name="formLayout_2">
+               <property name="horizontalSpacing">
+                <number>20</number>
+               </property>
+               <property name="verticalSpacing">
+                <number>20</number>
+               </property>
+               <property name="leftMargin">
+                <number>10</number>
+               </property>
+               <item row="0" column="0">
+                <widget class="QLabel" name="lbHost">
+                 <property name="font">
+                  <font>
+                   <pointsize>-1</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel {
+    background-color: #48484A;   /* gris oscuro estilo macOS */
+    color: #FFFFFF;              /* texto blanco para buen contraste */
+    font-weight: 400;
+    font-size: 12px;
+    border: none; 
+    border-radius: 12px;
+    padding: 8px;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Host:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QLineEdit" name="txtHost">
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+    background-color: #48484A;   
+    color: #FFFFFF;              
+    border: 1px solid #5A5A5C;  
+    border-radius: 12px;          
+    padding: 6px 10px;           
+}
+QLineEdit {
+    background-color: #48484A;   
+    color: #FFFFFF;              
+    border: 1px solid #5A5A5C;  
+    border-radius: 12px;          
+    padding: 6px 10px;           
+}
+QLineEdit:hover {
+    border: 1px solid #0A84FF;  
+    background-color: #5A5A5C;  
+    border-radius: 12px;  /* &lt;- importante repetir */
+}
+&quot;&quot;&quot;
+</string>
+                 </property>
+                 <property name="text">
+                  <string>localhost</string>
+                 </property>
+                 <property name="maxLength">
+                  <number>11</number>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="txtUsuario_2">
+                 <property name="font">
+                  <font>
+                   <pointsize>-1</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel {
+    background-color: #48484A;   /* gris oscuro estilo macOS */
+    color: #FFFFFF;              /* texto blanco para buen contraste */
+    font-weight: 400;
+    font-size: 12px;
+    border: none; 
+    border-radius: 12px;
+    padding: 8px;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Usuario:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QLineEdit" name="txtUsuario">
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+    background-color: #48484A;   
+    color: #FFFFFF;              
+    border: 1px solid #5A5A5C;  
+    border-radius: 12px;          
+    padding: 6px 10px;           
+}
+QLineEdit {
+    background-color: #48484A;   
+    color: #FFFFFF;              
+    border: 1px solid #5A5A5C;  
+    border-radius: 12px;          
+    padding: 6px 10px;           
+}
+QLineEdit:hover {
+    border: 1px solid #0A84FF;  
+    background-color: #5A5A5C;  
+    border-radius: 12px;  /* &lt;- importante repetir */
+}
+&quot;&quot;&quot;
+</string>
+                 </property>
+                 <property name="text">
+                  <string>root</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QLabel" name="lbBD">
+                 <property name="font">
+                  <font>
+                   <pointsize>-1</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel {
+    background-color: #48484A;   /* gris oscuro estilo macOS */
+    color: #FFFFFF;              /* texto blanco para buen contraste */
+    font-weight: 400;
+    font-size: 12px;
+    border: none; 
+    border-radius: 12px;
+    padding: 8px;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Base De Datos:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QLineEdit" name="txtBD">
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+    background-color: #48484A;   
+    color: #FFFFFF;              
+    border: 1px solid #5A5A5C;  
+    border-radius: 12px;          
+    padding: 6px 10px;           
+}
+QLineEdit {
+    background-color: #48484A;   
+    color: #FFFFFF;              
+    border: 1px solid #5A5A5C;  
+    border-radius: 12px;          
+    padding: 6px 10px;           
+}
+QLineEdit:hover {
+    border: 1px solid #0A84FF;  
+    background-color: #5A5A5C;  
+    border-radius: 12px;  /* &lt;- importante repetir */
+}
+&quot;&quot;&quot;
+</string>
+                 </property>
+                 <property name="text">
+                  <string>empresa</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="0">
+                <widget class="QLabel" name="lbContrasena">
+                 <property name="font">
+                  <font>
+                   <pointsize>-1</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel {
+    background-color: #48484A;   /* gris oscuro estilo macOS */
+    color: #FFFFFF;              /* texto blanco para buen contraste */
+    font-weight: 400;
+    font-size: 12px;
+    border: none; 
+    border-radius: 12px;
+    padding: 8px;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Contraseña:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="1">
+                <widget class="QLineEdit" name="txtContrasena">
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+    background-color: #48484A;   
+    color: #FFFFFF;              
+    border: 1px solid #5A5A5C;  
+    border-radius: 12px;          
+    padding: 6px 10px;           
+}
+QLineEdit {
+    background-color: #48484A;   
+    color: #FFFFFF;              
+    border: 1px solid #5A5A5C;  
+    border-radius: 12px;          
+    padding: 6px 10px;           
+}
+QLineEdit:hover {
+    border: 1px solid #0A84FF;  
+    background-color: #5A5A5C;  
+    border-radius: 12px;  /* &lt;- importante repetir */
+}
+&quot;&quot;&quot;
+</string>
+                 </property>
+                 <property name="text">
+                  <string>1Luminati7</string>
+                 </property>
+                 <property name="echoMode">
+                  <enum>QLineEdit::Password</enum>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_3" native="true">
+        <layout class="QHBoxLayout" name="horizontalLayout_7">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_8">
+           <item>
+            <widget class="QPushButton" name="btnAceptar">
+             <property name="font">
+              <font>
+               <pointsize>-1</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    background-color: #48484A;  /* gris oscuro estilo macOS */
+    color: #FFFFFF;              /* texto blanco */
+    font-size: 15px;
+    font-weight: 400;
+    border: 1px solid #3A3A3C;
+    border-radius: 12px;
+    padding: 6px 12px;           /* un poco de padding para botones pequeños */
+}
+
+QPushButton:hover {
+    border: 1px solid #0A84FF;  
+    background-color: #5C5C5E;   /* gris un poco más claro al pasar mouse */
+}
+
+QPushButton:pressed {
+    background-color: #3A3A3C;   /* gris más oscuro al presionar */
+}</string>
+             </property>
+             <property name="text">
+              <string>Aceptar</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnCancelar">
+             <property name="font">
+              <font>
+               <pointsize>-1</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    background-color: #48484A;  /* gris oscuro estilo macOS */
+    color: #FFFFFF;              /* texto blanco */
+    font-size: 15px;
+    font-weight: 400;
+    border: 1px solid #3A3A3C;
+    border-radius: 12px;
+    padding: 6px 12px;           /* un poco de padding para botones pequeños */
+}
+
+QPushButton:hover {
+    border: 1px solid #0A84FF;  
+    background-color: #5C5C5E;   /* gris un poco más claro al pasar mouse */
+}
+
+QPushButton:pressed {
+    background-color: #3A3A3C;   /* gris más oscuro al presionar */
+}</string>
+             </property>
+             <property name="text">
+              <string>Cancelar</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>519</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
